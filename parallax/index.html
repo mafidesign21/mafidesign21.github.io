@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Imágenes con paralaje</title>
+	
+	<script>document.documentElement.className = 'js';</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/template.min.css">
+	<link rel="stylesheet" type="text/css" href="css/template.theme.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/site.layout.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.classes.css">
+	
+	<link rel="stylesheet" href="css/jquery.parallax.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+  <style type="text/css" media="screen, projection">
+    .parallax-viewport {
+      width: 800px;
+      max-width: 60em;
+      height: 300px;
+      background-color: #aebcc9;
+	/*background:url("imagen/world.jpg")*/
+    }
+    
+    .diagram {
+      margin-top: -0.75em;
+    }
+    
+	  small {
+	    text-transform: uppercase;
+	  }
+	</style>
+
+</head>
+
+<body>
+<h1>Los dos laberintos</h1>
+
+	<div style="width:800px; margin:auto;"> <!-- div>class="site_wrap wrap" -->
+  
+    <div class="parallax-viewport" id="parallax">
+        
+        <!-- parallax layers -->
+        <div class="parallax-layer" style="width:820px; height:300px;">
+            <img src="imagen/fondo-05.png" alt="" style="position:absolute; left:0px; top:0px;"/>
+        </div>
+        <div class="parallax-layer" style="width: 1000px; height: 300px;">
+            <img src="imagen/planetas-04.png" width="1128" height="230">
+        </div>
+
+        <div class="parallax-layer" style="width:1200px; height:300px;">
+            <img src="imagen/piedras1_Mesa de trabajo 1.png" width="1200" height="300">
+        </div>
+        <div class="parallax-layer" style="width:1200px; height:300px;">
+          <img src="imagen/piedras2-02.png" width="1200" height="300">
+      </div>
+
+      <div class="parallax-layer" style="width:1200px; height:300px;">
+        <img src="imagen/estrellas-06.png" width="1200" height="300">
+    </div>
+
+    </div>
+    
+    </div>
+
+<div class="contenedor">
+<p> 
+
+</p>
+<p>
+Cuentan los hombres dignos de fe (pero Alá sabe más) que en los primeros días hubo un rey de las islas de Babilonia que congregó a sus arquitectos y magos y les mandó a construir un laberinto tan perplejo y sutil que los varones más prudentes no se aventuraban a entrar, y los que entraban se perdían.
+</p>
+<p>
+Esa obra era un escándalo, porque la confusión y la maravilla son operaciones propias de Dios y no de los hombres. Con el andar del tiempo vino a su corte un rey de los árabes, y el rey de Babilonia (para hacer burla de la simplicidad de su huésped) lo hizo penetrar en el laberinto, donde vagó afrentado y confundido hasta la declinación de la tarde.
+</p>
+<p>
+Entonces imploró socorro divino y dio con la puerta. Sus labios no profirieron queja ninguna, pero le dijo al rey de Babilonia que él en Arabia tenía otro laberinto y que, si Dios era servido, se lo daría a conocer algún día. Luego regresó a Arabia, juntó sus capitanes y sus alcaides y estragó los reinos de Babilonia con tan venturosa fortuna que derribo sus castillos, rompió sus gentes e hizo cautivo al mismo rey.
+</p>
+<p>
+Lo amarró encima de un camello veloz y lo llevó al desierto. Cabalgaron tres días, y le dijo: "Oh, rey del tiempo y substancia y cifra del siglo!, en Babilonia me quisiste perder en un laberinto de bronce con muchas escaleras, puertas y muros; ahora el Poderoso ha tenido a bien que te muestre el mío, donde no hay escaleras que subir, ni puertas que forzar, ni fatigosas galerías que recorrer, ni muros que veden el paso."
+</p>
+<p>
+Luego le desató las ligaduras y lo abandonó en la mitad del desierto, donde murió de hambre y de sed. La gloria sea con aquel que no muere.
+</p>
+
+</div>
+
+
+  <script src="js/jquery1.7.2.js"></script>
+  <script src="js/jquery.event.frame.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+    jQuery('#parallax .parallax-layer')
+    .parallax({
+      mouseport: jQuery('#parallax')
+    });
+  });
+  </script>
+</body>
+</html>
