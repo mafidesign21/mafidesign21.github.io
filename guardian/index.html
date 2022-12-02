@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Imágenes con paralaje</title>
+	
+	<script>document.documentElement.className = 'js';</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<link rel="stylesheet" type="text/css" href="css/template.min.css">
+	<link rel="stylesheet" type="text/css" href="css/template.theme.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/site.layout.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.classes.css">
+	
+	<link rel="stylesheet" href="css/jquery.parallax.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+  <style type="text/css" media="screen, projection">
+    .parallax-viewport {
+      width: 800px;
+      max-width: 60em;
+      height: 300px;
+      background-color: #aebcc9;
+	/*background:url("imagen/world.jpg")*/
+    }
+    
+    .diagram {
+      margin-top: -0.75em;
+    }
+    
+	  small {
+	    text-transform: uppercase;
+	  }
+	</style>
+
+</head>
+
+<body>
+<h1>Guardian 6</h1>
+
+	<div style="width:800px; margin:auto;"> <!-- div>class="site_wrap wrap" -->
+  
+    <div class="parallax-viewport" id="parallax">
+        
+        <!-- parallax layers -->
+        <div class="parallax-layer" style="width:820px; height:300px;">
+            <img src="imagen/fondo-05.png" alt="" style="position:absolute; left:0px; top:0px;"/>
+        </div>
+        <div class="parallax-layer" style="width: 1000px; height: 300px;">
+            <img src="imagen/planetas-04.png" width="1128" height="230">
+        </div>
+
+        <div class="parallax-layer" style="width:1200px; height:300px;">
+            <img src="imagen/piedras1_Mesa de trabajo 1.png" width="1200" height="300">
+        </div>
+        <div class="parallax-layer" style="width:1200px; height:300px;">
+          <img src="imagen/piedras2-02.png" width="1200" height="300">
+      </div>
+
+      <div class="parallax-layer" style="width:1200px; height:300px;">
+        <img src="imagen/estrellas-06.png" width="1200" height="300">
+    </div>
+
+    </div>
+    
+    </div>
+
+<div class="contenedor">
+<p> 
+
+</p>
+<p>
+La belleza de los universos no tiene limites, lo que conocemos como planetas, son ideas, las estrellas propositos, nuestras lunas metas y el sol nuestra fuerza, la cual nos guia para forjar un camino nuevo.
+</p>
+<p>
+Dentro de este universo, no esperes nada racional, la razón no da cabidad a las posibilidades, ¿te haz preguntado, que es posible? que secretos oculta tu mente fuera del cubo al que estas acostumbrado? que esperas para averiguarlo?
+</p>
+<p>
+Las historias dentro de estos planetas pueden hacerte pensar que el mundo en el que vives es más que solo numeros y filosofia humana, hay muchas rutas, pero tienes el valor para ir por una diferente?
+</p>
+<p>
+Mi vida siempre fue.. diferente a la de los demas, ¿porqué?, para empezar, esta es mi cuarta vida, las otras tres ya son historia, aun asi guardan las llaves que necesito en mi camino, no se como encontrarlas, ni por donde empezar, solo se.. que existe la posibilidad..
+</p>
+<p>
+La muerte solo es una puerta a una nueva...
+</p>
+
+</div>
+
+
+  <script src="js/jquery1.7.2.js"></script>
+  <script src="js/jquery.event.frame.js"></script>
+  <script src="js/jquery.parallax.js"></script>
+  <script>
+  jQuery(document).ready(function(){
+    jQuery('#parallax .parallax-layer')
+    .parallax({
+      mouseport: jQuery('#parallax')
+    });
+  });
+  </script>
+</body>
+</html>
