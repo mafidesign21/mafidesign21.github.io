@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zorrito</title>
+    <style>
+        body{
+            font-family: sans-serif ;
+
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .animar{
+            margin: auto;
+            width: 204px;
+            height: 288px;
+            border: 2px solid black;
+            background-image: url(sprites/zorro.png);
+        }
+
+        .animar:hover{
+            animation: mEquis 1s steps(4) infinite;
+            cursor: pointer;
+        }
+        @keyframes mEquis{
+            100%{
+                background-position-x: -819px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Animacion CSS</h1>
+    <div class="animar"></div>
+</body>
+</html>
