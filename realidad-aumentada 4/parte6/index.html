@@ -1,0 +1,27 @@
+<html>
+   <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+   </head>    
+    <body style="margin : 0px; overflow: hidden;">
+
+        <a-scene embedded arjs>
+            <a-marker type="pattern"
+            preset="katana"
+            url="imagen/katana.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="markerA">
+            <a-entity
+            position="0 0 0"
+            rotation="0 -90 90"        
+            scale="5 5 5"
+            gltf-model="modelos3d/kitten_walk.glb"
+            ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+        </head>
+    </body>
+</html>
